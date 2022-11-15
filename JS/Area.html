@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>Area of </title>
+</head>
+<body>
+<h1>Area of Cricle</h1>
+<input type="number"id="radius"placeholder="Enter the radius"/>
+<input type="submit"value="submit" onclick="calCricle()"/>
+<h2>Area of rectangle</h2>
+<input type="number"id="len"placeholder="Enter the lenght"/>
+<input type="number"id="b"placeholder="Enter the breath"/>
+<input type="submit"value="submit" onclick="calRec()"/>
+<h3>Area of Triangle</h3>
+<input type="number"id="h"placeholder="Enter the height"/>
+<input type="number"id="ba"placeholder="Enter the base"/>
+<input type="submit"value="submit" onclick="calTri()"/>
+
+<script>
+function calCricle(){
+var rad=document.getElementById("radius").value;
+var z=3.14*rad*rad;
+document.write("area of cricle is"+z);
+}
+
+function calRec(){
+var l=document.getElementById("len").value;
+var b=document.getElementById("b").value;
+var c=l*b
+document.write("area of rectangle is"+c);
+}
+
+function calTri(){
+var h=document.getElementById("h").value;
+var d=document.getElementById("ba").value;
+var m=0.5*h*d
+document.write("area of rectangle is"+m);
+}
+</script>
+</body>
+</html>
